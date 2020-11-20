@@ -1,0 +1,109 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/713593/brick.png");
+}
+.center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container {
+   display: flex;
+   height: 100vh;
+   width: 100%;
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/713593/brick.png");
+}
+.game {
+   display: flex;
+   flex-direction: column;
+   height: 95%;
+   width: 35%;
+   min-width: 400px;
+}
+.head {
+   display: flex;
+   flex-direction: row;
+   height: 30%;
+   width: 100%;
+}
+.head > div {
+   display: flex;
+   height: 90%;
+   width: 30%;
+   border: 1px solid black;
+   margin: 2%;
+   font-size: 2rem;
+}
+.maingame {
+   display: flex;
+   height: 70%;
+   width: 100%;
+   flex-direction: column;
+   padding: 10px;
+}
+.startgame {
+   height: 10%;
+   width: 40%;
+   font-size: 30px;
+   border: 1px solid black;
+   border-radius: 10px;
+}
+.startgame:hover {
+   cursor: pointer;
+   background-color: grey;
+}
+.gamecontainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   height: 100%;
+   width: 100%;
+}
+
+.row {
+   display: flex;
+   height: 11%;
+   width: 100%;
+   justify-content: space-evenly;
+   /* border: 1px solid black; */
+}
+.cell {
+   display: flex;
+   height: 100%;
+   width: 95%;
+   font-size: 25px;
+   border: 1px solid black;
+   margin: 1px;
+   justify-content: space-evenly;
+
+   border-radius: 10px;
+}
+.cell:hover {
+   color: beige;
+   box-shadow: 0 0 0 3px red inset;
+   border: 1px solid black;
+}
+.hide {
+   display: none;
+}
+.red {
+   background-color: red;
+}
+.green {
+   background-color: green;
+   color: beige;
+}
+.emoji {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 100px;
+}
+.wall-border {
+   box-shadow: 0 0 0 5px grey inset;
+   outline: dashed 5px grey;
+}

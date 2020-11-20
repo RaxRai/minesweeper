@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="index.css" />
+      <title></title>
+   </head>
+   <body unselectable="on" onselectstart="return false;">
+      <div class="container center wall-border">
+         <div class="game center wall-border">
+            <div class="head center">
+               <div class="bombcount center" id="bombcount">Score</div>
+               <div class="emoji" id="emoji">
+                  <div class="emoji" id="emoji1">😎</div>
+               </div>
+               <div class="timer center" id="timer">
+                  <div class="center">⏰</div>
+                  <div class="mins center" id="mins">00</div>
+                  :
+                  <div class="secs center" id="secs">00</div>
+               </div>
+            </div>
+            <div
+               class="maingame center wall-border"
+               id="maingame"
+               oncontextmenu="return false;"
+            >
+               <div class="startgame center" id="startgame">Start</div>
+               <div class="gamecontainer hide" id="gamecontainer"></div>
+               <div class="startgame center hide" id="restart">Restart</div>
+            </div>
+         </div>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>
